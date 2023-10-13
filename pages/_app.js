@@ -2,12 +2,14 @@ import '@/styles/globals.css'
 import Head from 'next/head'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { Provider } from 'react-redux';
+import { Provider } from 'react-redux'
 import {store} from '../store/store'
+import NextNProgress from 'nextjs-progressbar'
 
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <NextNProgress color="#29D" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
       <Head>
         <title>Online Shoe Store | Tu Dev</title>
         <meta
